@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Main Page</h1>
+<p>[[${title}]]</p> <!-- вставить сюда значение из модели (атрибут title) -->
+<!-- data-th-if="${result}" - проверяет наличие атрибута в модели -->
+<p data-th-if="${result}">Your result: [[${result}]]</p>
+<!-- form + TAB -->
+<form action="">
+    <input name="height" type="text" placeholder="Height in sm">
+    <input name="weight" type="text" placeholder="Weight in kg">
+    <button>Calculate</button>
+</form>
+</body>
+</html>
